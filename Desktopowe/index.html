@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>odtwarzacz-mp3</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container layout">
+      <section class="player">
+        <h1>MP3 - MojaPolka3latka</h1>
+
+        <div class="controls">
+          <div class="left">
+            <button id="btn-open" class="btn">Wybierz plik MP3</button>
+          </div>
+          <div class="right">
+            <button id="btn-play" class="btn primary" disabled>rozpocznij odtwarzanie</button>
+            <button id="btn-stop" class="btn danger" disabled>przerwij odtwarzanie</button>
+          </div>
+        </div>
+
+        <div class="info">
+          <div>Plik: <strong id="file-name">—</strong></div>
+          <div id="status">Nie wybrano pliku</div>
+        </div>
+
+        <div class="progress-bar">
+          <div id="progress" class="progress"></div>
+        </div>
+        <div id="time" class="time">00:00 / 00:00</div>
+      </section>
+
+      <aside class="sidebar">
+        <h2>Przykładowe MP3</h2>
+        <ul id="playlist" class="playlist">
+          <li data-src="assets/audio/sample1.mp3"><span class="track">fajne.mp3</span></li>
+          <li data-src="assets/audio/sample2.mp3"><span class="track">bambiszon.mp3</span></li>
+          <li data-src="assets/audio/sample3.mp3"><span class="track">kliknij mnie.mp3</span></li>
+          <li data-src="assets/audio/sample4.mp3"><span class="track">cos na pewno.mp3</span></li>
+          <li data-src="assets/audio/sample5.mp3"><span class="track">filipek.mp3</span></li>
+        </ul>
+        <p>Autor: Jakub Sznober</p>
+      </aside>
+    </main>
+
+    <script src="renderer.js" defer></script>
+  </body>
+  </html>
