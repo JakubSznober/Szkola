@@ -56,7 +56,6 @@ playBtn.addEventListener('click', async () => {
 stopBtn.addEventListener('click', () => {
   if (!loaded) return;
   audio.pause();
-  audio.currentTime = 0;
   statusEl.textContent = 'Zatrzymano';
 });
 
@@ -94,3 +93,4 @@ if (playlistEl) {
     }
   });
 }
+
